@@ -1,0 +1,26 @@
+[project]
+name = "monte-carlo"
+version = "0.1.0"
+description = "Monte Carlo methods: foundations, implementation, applications and limitations (Mathematics of Modern ML, M1 project)"
+readme = "README.md"
+authors = [
+    { name = "aarensberg", email = "sandro.arens@icloud.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "pandas>=3.1.1",
+    "scipy>=1.18.1",
+]
+
+[tool.uv]
+# Projet non packagé : le seul livrable est le notebook main.ipynb
+package = false
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "nbconvert>=7.17.2",
+    "ruff>=0.17.5",
+]
